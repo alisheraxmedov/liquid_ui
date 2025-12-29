@@ -1,0 +1,25 @@
+name: liquid_ui_example
+description: "Example app demonstrating liquid_ui package usage."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0-93.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+  liquid_ui:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
