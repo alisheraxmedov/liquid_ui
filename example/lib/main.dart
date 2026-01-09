@@ -51,8 +51,10 @@ class _ExamplePageState extends State<ExamplePage> {
         body: Stack(
           children: [
             // Scrollable content
+            // Using BouncingScrollPhysics to prevent blur disappearing during overscroll
             CustomScrollView(
               controller: _scrollController,
+              physics: const BouncingScrollPhysics(),
               slivers: [
                 // Spacer for navigation bar
                 const SliverToBoxAdapter(child: SizedBox(height: 100)),
