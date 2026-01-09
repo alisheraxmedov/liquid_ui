@@ -80,7 +80,12 @@ class GlassWidget extends StatelessWidget {
     Widget glassWidget = ClipRRect(
       borderRadius: BorderRadius.circular(borderRadius),
       child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: blurSigma, sigmaY: blurSigma),
+        // TileMode.mirror prevents blur artifacts during scroll
+        filter: ImageFilter.blur(
+          sigmaX: blurSigma,
+          sigmaY: blurSigma,
+          tileMode: TileMode.mirror,
+        ),
         child: CustomPaint(
           foregroundPainter: GradientBorderPainter(
             borderRadius: borderRadius,

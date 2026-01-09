@@ -129,7 +129,12 @@ class _LiquidNavigationBarState extends State<LiquidNavigationBar> {
     if (isBlurEnabled) {
       return ClipRect(
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: blurSigma, sigmaY: blurSigma),
+          // TileMode.mirror prevents blur artifacts during scroll
+          filter: ImageFilter.blur(
+            sigmaX: blurSigma,
+            sigmaY: blurSigma,
+            tileMode: TileMode.mirror,
+          ),
           child: content,
         ),
       );

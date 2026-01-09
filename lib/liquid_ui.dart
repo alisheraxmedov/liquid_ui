@@ -51,3 +51,13 @@ export 'src/controllers/motion_parallax_controller.dart';
 // Utils
 export 'src/utils/platform_config.dart';
 export 'src/utils/performance_detector.dart';
+
+// Cache (for advanced usage)
+export 'src/cache/geometry_cache.dart';
+
+// High-performance widgets
+export 'src/widgets/cached_liquid_material.dart';
+
+// Shader rendering (GPU-accelerated)
+export 'src/rendering/shader_manager.dart';
+export 'src/rendering/shader_liquid_glass.dart';

@@ -60,18 +60,12 @@ class PlatformConfig {
 
   /// Returns the blur multiplier for the current platform.
   ///
-  /// iOS/Desktop: 1.0 (full quality)
-  /// Android: 0.5 (reduced for performance - BackdropFilter is expensive)
-  /// Web: 0.0 (disabled)
+  /// All platforms now use 1.0 for consistent effects.
+  /// TileMode.mirror in BackdropFilter handles scroll performance.
   static double get blurMultiplier {
     if (kIsWeb) return 0.0;
-    if (!kIsWeb && Platform.isIOS) return 1.0;
-    if (!kIsWeb && Platform.isMacOS) return 1.0;
-    if (!kIsWeb && Platform.isLinux) return 1.0;
-    if (!kIsWeb && Platform.isWindows) return 1.0;
-    if (!kIsWeb && Platform.isAndroid) {
-      return 0.5; // Reduced for Android performance
-    }
+    // All native platforms use full blur quality
+    // TileMode.mirror fixes scroll issues
     return 1.0;
   }
 
