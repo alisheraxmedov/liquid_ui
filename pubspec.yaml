@@ -1,6 +1,6 @@
 name: liquid_widgets
 description: "A Flutter package for creating iOS-style liquid glass UI widgets with blur effects, gradient borders, and subtle shadows."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/alisheraxmedov/liquid_widgets
 repository: https://github.com/alisheraxmedov/liquid_widgets
 issue_tracker: https://github.com/alisheraxmedov/liquid_widgets/issues
