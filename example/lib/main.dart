@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_ui/liquid_ui.dart';
+import 'package:liquid_widgets/liquid_widgets.dart';
 
 void main() {
   runApp(const LiquidUIExampleApp());

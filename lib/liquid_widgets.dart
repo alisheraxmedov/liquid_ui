@@ -1,4 +1,4 @@
-/// Liquid UI - A Flutter package for iOS-style liquid glass UI widgets.
+/// Liquid Widgets - A Flutter package for iOS-style liquid glass UI widgets.
 ///
 /// This package provides true Apple-style liquid material effects with:
 /// - Material types (ultraThin, thin, regular, thick)
@@ -10,11 +10,11 @@
 /// ## Quick Start
 ///
 /// ```dart
-/// import 'package:liquid_ui/liquid_ui.dart';
+/// import 'package:liquid_widgets/liquid_widgets.dart';
 ///
 /// LiquidMaterial(
 ///   type: LiquidMaterialType.regular,
-///   child: Text('Hello Liquid UI'),
+///   child: Text('Hello Liquid Widgets'),
 /// )
 /// ```
 ///

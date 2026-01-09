@@ -1,16 +1,20 @@
 # Changelog
 
-## 1.0.2 - 2026-01-09
+## 1.0.0 - 2026-01-09
+
+### Breaking Change
+- **Renamed package to `liquid_widgets`** due to name availability issues on pub.dev.
+- Updated all imports to `package:liquid_widgets/liquid_widgets.dart`.
 
 ### Fixed
-- Added `TileMode.mirror` to BackdropFilter for scroll-safe blur on Android
-- Added `BouncingScrollPhysics` tip for better scroll performance
-- Updated platform support: full blur quality on all native platforms
+- Added `TileMode.mirror` to BackdropFilter for scroll-safe blur on Android.
+- Added `BouncingScrollPhysics` tip for better scroll performance.
+- Updated platform support: full blur quality on all native platforms.
 
 ### Changed
-- Removed experimental shader rendering code
-- Simplified codebase for better maintainability
-- Updated README with Android scroll tip
+- Removed experimental shader rendering code.
+- Simplified codebase for better maintainability.
+- Updated README with Android scroll tip.
 
 All notable changes to this project will be documented in this file.
 

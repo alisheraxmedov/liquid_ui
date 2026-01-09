@@ -1,6 +1,6 @@
 # Liquid UI
 
-[![pub package](https://img.shields.io/pub/v/liquid_ui.svg)](https://pub.dev/packages/liquid_ui)
+[![pub package](https://img.shields.io/pub/v/liquid_widgets.svg)](https://pub.dev/packages/liquid_widgets)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A Flutter package for creating iOS-style liquid glass UI widgets with blur effects, gradient borders, and subtle shadows.
@@ -40,7 +40,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  liquid_ui: ^0.0.1
+  liquid_widgets: ^0.0.1
 ```
 
 Run:
@@ -54,7 +54,7 @@ flutter pub get
 ### Basic Usage
 
 ```dart
-import 'package:liquid_ui/liquid_ui.dart';
+import 'package:liquid_widgets/liquid_widgets.dart';
 
 LiquidMaterial(
   type: LiquidMaterialType.regular,

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:liquid_ui/liquid_ui.dart';
+import 'package:liquid_widgets/liquid_widgets.dart';
 
 void main() {
   group('LiquidMaterialType', () {
