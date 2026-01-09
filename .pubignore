@@ -1,0 +1,2 @@
+# Files to exclude from pub.dev publishing
+pubspec.lock
