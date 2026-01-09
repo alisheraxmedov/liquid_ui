@@ -73,10 +73,12 @@ jobs:
           flutter pub get
           flutter test
       
-      - name: Publish to pub.dev
+      - name: Setup pub.dev credentials
         if: success()
         run: |
-          echo "Ready to publish version ${{ steps.new_version.outputs.new_version }}"
-          echo "To enable auto-publish, add PUB_DEV_CREDENTIALS secret"
-          # Uncomment below when ready:
-          # flutter pub publish --force
+          mkdir -p ~/.config/dart
+          echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.config/dart/pub-credentials.json
+      
+      - name: Publish to pub.dev
+        if: success()
+        run: flutter pub publish --force
