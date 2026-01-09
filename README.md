@@ -26,9 +26,13 @@ A Flutter package for creating iOS-style liquid glass UI widgets with blur effec
 | Platform | Blur Quality | Notes |
 |----------|--------------|-------|
 | iOS | Full | Best visual quality |
-| Android | Optimized | Reduced blur for performance |
+| Android | Full | Use `BouncingScrollPhysics` for best results |
+| macOS | Full | Desktop quality |
 | Linux | Full | Desktop quality |
+| Windows | Full | Desktop quality |
 | Web | Fallback | Solid background, no blur |
+
+> **Tip for Android:** To prevent blur disappearing during fast scrolling, use `BouncingScrollPhysics()` on your scroll widgets.
 
 ## Installation
 
